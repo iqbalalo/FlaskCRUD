@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+{% block content %}
+    <div class="col-lg-12 col-md-12 col-sm-12" style="padding: 0 3em;">
+        <form id="new_user_form" action="/user/save" method="POST">
+            <div class="col-lg-12 col-md-12 col-sm-12 action-bar">
+                <button id="new_user_submit_button" type="submit" class="btn btn-sm btn-success mr-md-2">Save</button>
+                <a href="/user" class="btn btn-sm btn-secondary mr-md-2">Cancel</a>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12" style="margin-bottom: 5em;">
+                    <div class="mb-md-3">
+                        <input type="text" class="form-control form-control-sm" placeholder="First name" name="first_name">
+                    </div>
+                    <div class="mb-md-3">
+                        <input type="text" class="form-control form-control-sm" placeholder="Last name" name="last_name">
+                    </div>
+                    <div class="mb-md-3">
+                        <input type="text" class="form-control form-control-sm" placeholder="Email" name="email">
+                    </div>
+                    <div class="mb-md-3">
+                        <input type="text" class="form-control form-control-sm" placeholder="Phone" name="phone">
+                    </div>
+                    <div class="mb-md-3">
+                        <input type="text" class="form-control form-control-sm" placeholder="Password" name="password">
+                    </div>
+                    <div class="mb-md-3">
+                        <input type="checkbox" name="active"> Active
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+{% endblock %}
